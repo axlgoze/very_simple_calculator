@@ -1,0 +1,67 @@
+<meta charset="UTF-8">
+<h1>This is a simple calculator made with the basic languages of a web development</h1>
+<hr>
+<script>
+    //add fuction
+    function sumar(n1,n2){
+        var outcome = (n1+n2);
+        return outcome;
+    }
+    //subtract fuction
+    function restar(n1,n2){
+        var outcome = (n1-n2);
+        return outcome;
+    }
+    //multiply fuction
+    function multiplicar(n1,n2){
+        var outcome = (n1*n2);
+        return outcome;
+    }
+    //divide fuction
+    function dividir(n1,n2){
+        var outcome = (n1/n2);
+        return outcome;
+    }
+    //power fuction
+    function potencia(n1,n2){
+        var outcome = Math.pow(n1,n2);
+        return outcome;
+    }
+
+    //breakline function
+    function saltarLinea(){
+        document.write("<br><br>");
+        document.write("<hr>")
+        document.write("<br>")
+    }
+
+    //defining variables
+    var number1 = 33;
+    var number2 = 55;
+
+    //program
+    document.write("La suma de "+number1+ " y "+number2+" es: "+sumar(number1,number2));
+    
+    saltarLinea();
+    document.write("La resta de "+number1+ " y "+number2+" es: "+restar(number1,number2));
+    
+    saltarLinea();
+    document.write("La multiplicación de "+number1+ " y "+number2+" es: "+multiplicar(number1,number2));
+    
+    saltarLinea();
+    document.write("La divisipon de "+number1+ " entre "+number2+" es: "+dividir(number1,number2));
+    
+    saltarLinea();
+    document.write("La potencia de "+number1+ " elevado a la "+number2+" es: "+potencia(number1,number2));
+    
+    saltarLinea();
+</script>
+
+<style>
+    h1{
+        color: chocolate;
+    }
+    hr{
+        color: rgb(15, 77, 77);
+    }
+</style>
